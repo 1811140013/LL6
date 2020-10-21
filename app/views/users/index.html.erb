@@ -1,0 +1,5 @@
+<% @users.each do |e| %>
+<p><%=e.uid%>  <%= link_to'削除',user_path(e),method: :delete%></p>
+<% end %>
+<p><%=link_to'ユーザー登録',new_user_path %></p>
+<p><%=link_to'ログイン',root_path %><p>
